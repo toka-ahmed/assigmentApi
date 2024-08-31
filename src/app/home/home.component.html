@@ -1,0 +1,16 @@
+<div class="row bg-info-subtle">
+    @for (item of dataRes; track $index) {
+        <div class="col-md-3 g-3  text-center">
+            <div class="border bg-body-secondary border-primary-subtle h-100">
+                <img [src]="item.image" class="w-100"   alt="">
+                <h3>{{item.title.split(" ").slice(0, 3).join(" ")}}</h3>
+                <p>{{ "category : "+item.category}}</p>
+                <p>{{"price : "+item.price}}</p>
+                <p >{{"rate : "+ item.rating.rate}}</p>
+                
+        
+            </div>
+        </div>
+    }
+
+</div>
